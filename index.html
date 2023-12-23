@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script defer src="./src/main.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <h1>Palette Picker</h1>
+      <div id="app">
+        <div id="user-form">
+          <h2>Add a Palette</h2>
+          <form id="palette-form" action="color palette" aria-labelledby="user palette input">
+            <div id="user-inputPalette">
+              <label for="paletteTitle">Palette Title: </label>
+              <input type="text" id="paletteTitle">
+            </div>
+            <div id="input-color1">
+              <label for="color1">Color #1</label>
+              <input type="color" id="color1" value="#808080">
+            </div>
+            <div id="input-color2">
+              <label for="color2">Color #2</label>
+              <input type="color" id="color2" value="#0000ff">
+            </div>
+            <div id="input-color3">
+              <label for="color3">Color #3</label>
+              <input type="color" id="color3" value="#90ee90">
+            </div>          
+            <p>Temperature</p>
+            <div id="default-colors">
+              <label for="temp1"></label>
+              <input type="radio" id="temp1" name="temperature" value="warm"> Warm
+              <label for="temp2"></label>
+              <input type="radio" id="temp2" name="temperature" value="neutral"> Neutral
+              <label for="temp3"></label>
+              <input type="radio" id="temp3" name="temperature" value="cool"> Cool
+            </div>
+            <div id="submit-userPalette">
+              <button id="create">Create the palette</button>
+            </div>
+          </form>      
+        </div>
+      </div>
+      <h2 id="header2">Palettes</h2>
+      <div id="default-container">
+        <div id="default-marcy">
+          <div id="deafualt-color1">
+            <h3>Marcy</h3>
+            <div id="text-container1">
+              <div id="flex-text">
+                <p>Text Example</p>
+              <button>Copy #c92929</button>
+              </div>
+            </div>
+            <div id="text-container2">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #2f5a8b</button>
+              </div>
+            </div>
+            <div id="text-container3">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #327a57</button>
+              </div>
+            </div>
+          </div>
+          <button>Delete Palette</button>
+          <div id="footer1">
+            <h4>neutral</h4>
+          </div>
+        </div>
+        <div id="default-modern">
+          <div id="deafualt-color2">
+            <h3>Sleek and Modern</h3>
+            <div id="text-container1">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #c3A5199</button>
+              </div>
+            </div>
+            <div id="text-container2">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #2F2E33</button>
+              </div>
+            </div>
+            <div id="text-container3">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #D5D6D2</button>
+              </div>
+            </div>
+          </div>
+          <button>Delete Palette</button>
+          <div id="footer2">
+            <h4>cool</h4>
+          </div>
+        </div>
+        <div id="default-ugly">
+          <div id="deafualt-color3">
+            <h3>Ugly</h3>
+            <div id="text-container1">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #4dff00</button>
+              </div>
+            </div>
+            <div id="text-container2">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #ff0000</button>
+              </div>
+            </div>
+            <div id="text-container3">
+              <div id="flex-text">
+                <p>Text Example</p>
+                <button>Copy #0011ff</button>
+              </div>
+            </div>
+          </div>
+          <button>Delete Palette</button>
+          <div id="footer3">
+            <h4>warm</h4>
+          </div>
+        </div>
+      </div>
+      <!-- <div id="create-container">
+        <div id="user-createPalette">
+          <h3 id="user-paletteTitle"></h3>
+          <div id="userText-container">
+            <div id="UserFlex-text">
+              <p id="user-p"></p>
+            <button id="userColor-code1"></button>
+            </div>
+          </div>
+          <div id="UserText-container">
+            <div id="UserFlex-text">
+              <p id="user-p"></p>
+              <button id="userColor-code2"></button>
+            </div>
+          </div>
+          <div id="Usertext-container">
+            <div id="UserFlex-text">
+              <p id="user-p"></p>
+              <button id="userColor-code1"></button>
+            </div>
+          </div>
+          <button id="user-delete"></button>
+          <div id="user-footer">
+            <h4 id="user-Tempature"></h4>
+          </div>
+        </div>
+      </div> -->
+    </main>
+  </body>
+</html>
+
